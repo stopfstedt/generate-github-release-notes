@@ -1,0 +1,22 @@
+{
+  "name": "generate-github-release-notes",
+  "version": "0.0.0",
+  "description": "Generate release notes for a github project",
+  "main": "index.js",
+  "author": "Jon Johnson (jon.johnson@ucsf.edu)",
+  "license": "MIT",
+  "private": false,
+  "preferGlobal": true,
+  "bin": "./generate.js",
+  "dependencies": {
+    "app-root-path": "^2.0.1",
+    "debug": "^3.1.0",
+    "github": "^12.0.3",
+    "handlebars": "^4.0.11",
+    "meow": "^3.7.0",
+    "mz": "^2.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0"
+  }
+}
