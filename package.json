@@ -1,6 +1,6 @@
 {
   "name": "generate-github-release-notes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate release notes for a github project",
   "main": "index.js",
   "author": "Jon Johnson (jon.johnson@ucsf.edu)",
