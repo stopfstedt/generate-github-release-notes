@@ -10,12 +10,12 @@
   "bin": "./generate.js",
   "dependencies": {
     "@octokit/rest": "^16.15.0",
-    "debug": "^3.1.0",
+    "debug": "^4.1.1",
     "handlebars": "^4.0.11",
     "meow": "^3.7.0",
     "mz": "^2.7.0"
   },
   "devDependencies": {
-    "eslint": "^4.11.0"
+    "eslint": "^5.13.0"
   }
 }
