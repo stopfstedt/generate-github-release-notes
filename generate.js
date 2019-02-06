@@ -15,6 +15,14 @@ const cli = meow(`
   Examples
     $ generate-github-release-notes jrjohnson generate-github-release-notes 1.0.1 2.0.0
 `,
+{
+  booleanDefault: undefined,
+  flags: {
+    githubApiToken: {
+      type: 'string',
+    },
+  }
+}
 );
 
 if (cli.input.length < 4) {
