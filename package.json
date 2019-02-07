@@ -8,6 +8,9 @@
   "private": false,
   "preferGlobal": true,
   "bin": "./generate.js",
+  "scripts": {
+    "lint:js": "eslint ."
+  },
   "dependencies": {
     "@octokit/rest": "^16.15.0",
     "debug": "^4.1.1",
@@ -16,12 +19,16 @@
     "mz": "^2.7.0"
   },
   "devDependencies": {
-    "eslint": "^5.13.0"
+    "eslint": "^5.13.0",
+    "pre-commit": "^1.2.2"
   },
   "files": [
     "main.js",
     "generate.js",
     "lib/",
     "templates/"
+  ],
+  "pre-commit": [
+    "lint:js"
   ]
 }
