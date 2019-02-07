@@ -1,5 +1,3 @@
-# {{releaseTagName}}
-
 ## [{{releaseTagName}}]({{repositoryUrl}}/tree/{{releaseTagName}})
 
 [Full Changelog]({{repositoryUrl}}/compare/{{sinceTagName}}...{{releaseTagName}})
@@ -12,21 +10,29 @@
 - {{issue.title}} [\#{{issue.number}}]({{issue.url}})
 {{/each}}
 {{/if}}
+
 {{/inline}}
 
 {{> issueBlock title='Fixed Bugs' issues=bugs}}
-
 {{> issueBlock title='Added Enhancements' issues=enhancements}}
-
 {{> issueBlock title='Closed issues' issues=remaining}}
-
 {{#if pullRequests.length}}
 **Merged pull requests:**
 
 {{#each pullRequests as |issue|}}
 - {{issue.title}} [\#{{issue.number}}]({{issue.url}}) [@{{issue.user.login}}]({{issue.user.url}})
 {{/each}}
+
 {{/if}}
+{{#if dependencies.length}}
+<details>
+<summary>Updated Dependencies:</summary>
 
+{{#each dependencies as |issue|}}
+- {{issue.title}} [\#{{issue.number}}]({{issue.url}})
+{{/each}}
 
+</details>
+
+{{/if}}
 \* *These notes were automatically created by [generate-github-release-notes](https://github.com/jrjohnson/generate-github-release-notes)*
