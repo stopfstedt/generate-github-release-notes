@@ -2,7 +2,7 @@
   "name": "generate-github-release-notes",
   "version": "1.1.0",
   "description": "Generate release notes for a github project",
-  "main": "index.js",
+  "main": "main.js",
   "author": "Jon Johnson (jon.johnson@ucsf.edu)",
   "license": "MIT",
   "private": false,
@@ -19,6 +19,7 @@
     "eslint": "^5.13.0"
   },
   "files": [
+    "main.js",
     "generate.js",
     "lib/",
     "templates/"
