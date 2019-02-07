@@ -17,5 +17,10 @@
   },
   "devDependencies": {
     "eslint": "^5.13.0"
-  }
+  },
+  "files": [
+    "generate.js",
+    "lib/",
+    "templates/"
+  ]
 }
