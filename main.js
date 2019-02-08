@@ -1,1 +1,2 @@
-export { generateReleaseNotes } from './lib/generateReleaseNotes.js';
+const generateReleaseNotes = require('./lib/generateReleaseNotes.js');
+exports.generateReleaseNotes = generateReleaseNotes;
