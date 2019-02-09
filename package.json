@@ -4,6 +4,7 @@
   "description": "Generate release notes for a github project",
   "main": "main.js",
   "author": "Jon Johnson (jon.johnson@ucsf.edu)",
+  "repository": "https://github.com/jrjohnson/generate-github-release-notes",
   "license": "MIT",
   "private": false,
   "preferGlobal": true,
