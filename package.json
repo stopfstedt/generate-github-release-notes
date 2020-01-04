@@ -10,7 +10,8 @@
   "preferGlobal": true,
   "bin": "./generate.js",
   "scripts": {
-    "lint:js": "eslint ."
+    "lint:js": "eslint .",
+    "test": "eslint . && mocha"
   },
   "dependencies": {
     "@octokit/rest": "^16.15.0",
@@ -22,6 +23,8 @@
   },
   "devDependencies": {
     "eslint": "^6.0.1",
+    "eslint-plugin-mocha": "^6.2.2",
+    "mocha": "^6.2.2",
     "pre-commit": "^1.2.2"
   },
   "files": [
