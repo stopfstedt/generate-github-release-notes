@@ -20,8 +20,9 @@ const octokit = new Octokit({
 const samplePath = path.join(__dirname, 'SampleNotes.md');
 const sampleContent = fs.readFileSync(samplePath, 'utf-8', 'r+');
 
-describe('Real Notes', function() {
-  it('generates notes for this repo', async function () {
+describe('Generate Real Release Notes', function () {
+  this.timeout(5000); 
+  it('for this repo', async function () {
     const notes = await generateReleaseNotes(
       octokit,
       'jrjohnson',
