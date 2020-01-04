@@ -11,7 +11,7 @@
   "bin": "./generate.js",
   "scripts": {
     "lint:js": "eslint .",
-    "test": "eslint . && mocha"
+    "test": "mocha"
   },
   "dependencies": {
     "@octokit/rest": "^16.15.0",

@@ -6,12 +6,10 @@
 
 
 
-<details>
-<summary>Updated Dependencies:</summary>
+**Merged pull requests:**
 
-- Bump handlebars from 4.3.3 to 4.5.3 [\#58](https://github.com/jrjohnson/generate-github-release-notes/pull/58)
-- Bump handlebars from 4.1.2 to 4.3.3 [\#41](https://github.com/jrjohnson/generate-github-release-notes/pull/41)
-
-</details>
+- Check issue closed time more granularly [\#12](https://github.com/jrjohnson/generate-github-release-notes/pull/12) [@jrjohnson](https://github.com/jrjohnson)
+- Add repository to package.json [\#10](https://github.com/jrjohnson/generate-github-release-notes/pull/10) [@jrjohnson](https://github.com/jrjohnson)
+- Check to ensure pull requests are merged [\#11](https://github.com/jrjohnson/generate-github-release-notes/pull/11) [@jrjohnson](https://github.com/jrjohnson)
 
 \* *These notes were automatically created by [generate-github-release-notes](https://github.com/jrjohnson/generate-github-release-notes)*
