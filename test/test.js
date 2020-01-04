@@ -17,20 +17,34 @@ const octokit = new Octokit({
   }
 });
 
-const samplePath = path.join(__dirname, 'SampleNotes.md');
-const sampleContent = fs.readFileSync(samplePath, 'utf-8', 'r+');
+async function checkNotes(assert, owner, repo, from, to, fixtureName) {
+  const notes = await generateReleaseNotes(octokit, owner, repo, from, to);
+  const samplePath = path.join(__dirname, 'fixtures', fixtureName);
+  const sampleContent = fs.readFileSync(samplePath, 'utf-8', 'r+');
+  assert.ok(notes.length > 0);
+  assert.equal(notes, sampleContent);
+}
 
-describe('Generate Real Release Notes', function () {
+describe('Comparing Real Release Notes', function () {
   this.timeout(5000); 
-  it('for this repo', async function () {
-    const notes = await generateReleaseNotes(
-      octokit,
+  it('works for this repo', async function () {
+    await checkNotes(
+      assert,
       'jrjohnson',
       'generate-github-release-notes',
       'v1.2.1',
-      'v1.3.0'
+      'v1.3.0',
+      'notes-generate.md'
     );
-    assert.ok(notes.length > 0);
-    assert.equal(notes, sampleContent);
+  });
+  it('works for ilios common', async function () {
+    await checkNotes(
+      assert,
+      'ilios',
+      'common',
+      'v22.0.0',
+      'v22.1.0',
+      'notes-common.md'
+    );
   });
 });
